@@ -10,10 +10,10 @@ spring:
     config:
       profile: dev
       label: master
-      #discovery:
-        #enabled: true
-        #serviceId: configServer
-      uri: http://localhost:9130
+      discovery:
+        enabled: true
+        serviceId: configServer
+      #uri: http://localhost:9130
 
 eureka:
   client:

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.oristartech.multi.AppTest" time="0.002" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.oristartech.multi.AppTest" time="0.001" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="E:\Java\jdk1.8.0_11\jre\bin"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="Service Pack 1"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\workspace\microSpringCloud"/>
+    <property name="user.dir" value="F:\git\microSpringCloud"/>
     <property name="java.runtime.version" value="1.8.0_11-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="E:\Java\jdk1.8.0_11\jre\lib\endorsed"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testApp" classname="com.oristartech.multi.AppTest" time="0.002"/>
+  <testcase name="testApp" classname="com.oristartech.multi.AppTest" time="0.001"/>
 </testsuite>
