@@ -33,6 +33,7 @@ public class HelloController {
 	
 	@RequestMapping("/config")
 	public String config(){
+		
 		return hello;
 	}
 	
