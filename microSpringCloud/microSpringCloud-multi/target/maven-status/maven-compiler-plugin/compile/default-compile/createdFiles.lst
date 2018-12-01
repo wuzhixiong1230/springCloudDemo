@@ -1,0 +1,4 @@
+com\oristartech\multi\trigger\RoutingVersionsTrigger.class
+com\oristartech\multi\MultiRequest.class
+com\oristartech\multi\MultiRequest$MultiBean.class
+com\oristartech\multi\autoconfig\MultiAutoConfig.class

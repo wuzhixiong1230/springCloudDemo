@@ -1,0 +1,22 @@
+feign:
+  hystrix:
+    enabled: true
+
+ribbon:       
+  MaxAutoRetriesNextServer: 1  ##重试服务的个数
+  MaxAutoRetries: 0            ##访问当前服务的次数
+  ConnectTimeout: 250
+  ReadTimeout: 5000
+  #OkToRetryOnAllOperations: true
+
+#hystrix连接超时设置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+
+serviceBamboo:
+  multiVersion: crm:3.3.5,spring-cloud-provider:3.0 #调用服务器的版本 用,间隔

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oristartech.mybatis.mapper.A8orgMapper">
+  <resultMap id="BaseResultMap" type="com.oristartech.mybatis.entity.A8org">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ORG_ID" jdbcType="BIGINT" property="orgId" />
+    <result column="ORG_NO" jdbcType="VARCHAR" property="orgNo" />
+    <result column="ORG_NAME" jdbcType="VARCHAR" property="orgName" />
+    <result column="PARENT_ORG_ID" jdbcType="BIGINT" property="parentOrgId" />
+    <result column="ORDER_NUM" jdbcType="INTEGER" property="orderNum" />
+    <result column="ORG_STATUS" jdbcType="VARCHAR" property="orgStatus" />
+  </resultMap>
+</mapper>

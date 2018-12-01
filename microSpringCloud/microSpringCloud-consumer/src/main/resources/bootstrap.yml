@@ -1,0 +1,25 @@
+server:
+  port: 9093
+
+spring:
+  zipkin:
+    base-url: http://localhost:9110
+  application:
+    name: spring-cloud-consumer
+  cloud:
+    config:
+      profile: dev
+      label: master
+      discovery:
+        enabled: true
+        serviceId: configServer
+      #uri: http://localhost:9130
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://122.14.208.111:9091/eureka/,http://122.14.209.213:9091/eureka/
+  instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${server.port}:${eureka.instance.metadata-map.versions}
+    metadata-map:
+      versions: 2.0

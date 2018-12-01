@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="dist">target/distribution</property>
+  <property name="res">target/distribution/resources</property>
+  <property name="config">target/distribution/config</property>
+  <property name="dist-tmp">target/distribution/tmp</property>
+  <property name="app-name">microSpringCloud-config-0.0.1-SNAPSHOT</property>
+  <property name="real-app-name">microSpringCloud-config</property>
+  <mkdir dir="${dist-tmp}"/>
+  <mkdir dir="${res}"/>
+  <mkdir dir="${config}"/>
+  <copy file="target/${app-name}.jar" tofile="${dist-tmp}/${app-name}.jar"/>
+  <unzip src="${dist-tmp}/${app-name}.jar" dest="${dist-tmp}"/>
+  <delete file="${dist-tmp}/${app-name}.jar"/>
+  <move file="target/${app-name}-classes.jar" tofile="${dist}/${real-app-name}.jar"/>
+  <move todir="${dist}/lib">
+    <fileset dir="target/lib"/>
+  </move>
+  <delete dir="${dist-tmp}"/>
+  <copy todir="${res}">
+    <fileset dir="target/classes">
+      <include name="**/static/**"/>
+      <include name="**/templates/**"/>
+    </fileset>
+  </copy>
+  <copy todir="${config}">
+    <fileset dir="target/classes">
+      <include name="**/*.properties"/>
+      <include name="**/*.xml"/>
+      <include name="**/*.yml"/>
+    </fileset>
+  </copy>
+</target>
+</project>

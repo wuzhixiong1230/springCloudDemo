@@ -1,0 +1,14 @@
+com\oristartech\mybatis\entity\A8user.class
+com\oristartech\util\SpringContextUtils.class
+com\oristartech\mybatis\config\MabatisMapperScanConfig.class
+com\oristartech\mybatis\entity\A8org.class
+com\oristartech\ProviderApplication.class
+com\oristartech\controller\HelloController.class
+com\oristartech\mybatis\mapper\A8userMapper.class
+com\oristartech\mybatis\mapper\AccountAreaMapper.class
+com\oristartech\service\A8userService.class
+com\oristartech\service\impl\A8userServiceImpl.class
+com\oristartech\mybatis\entity\AccountArea.class
+com\oristartech\controller\A8userController.class
+com\oristartech\mybatis\mapper\A8orgMapper.class
+com\oristartech\mybatis\config\MybatisConfig.class

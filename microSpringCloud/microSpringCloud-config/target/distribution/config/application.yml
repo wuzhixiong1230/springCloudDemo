@@ -1,0 +1,23 @@
+server:
+  port: 9130
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://gitee.com/melos/config
+#          username: *****
+#          password: *****
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://122.14.208.111:9091/eureka/,http://122.14.209.213:9091/eureka/
+ 
+management:
+  security:
+    enabled: false

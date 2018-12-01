@@ -1,0 +1,11 @@
+server:
+  port: 9120
+
+spring:
+  application:
+    name: adminServer
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://122.14.208.111:9091/eureka/,http://122.14.209.213:9091/eureka/

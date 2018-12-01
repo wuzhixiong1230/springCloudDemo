@@ -1,0 +1,4 @@
+com\oristartech\feign\ConsumerFeignTest.class
+com\oristartech\feign\ProviderFeignTest.class
+com\oristartech\feign\util\JsonUtil.class
+com\oristartech\feign\vo\A8userVo.class
