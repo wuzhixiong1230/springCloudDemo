@@ -13,7 +13,7 @@ spring:
       discovery:
         enabled: true
         serviceId: configServer
-      #uri: http://localhost:9130
+      
 
 eureka:
   client:
